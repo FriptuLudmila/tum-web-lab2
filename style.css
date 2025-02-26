@@ -46,11 +46,26 @@
   
   /* Hero Section */
   #hero {
+    background: url('solar-panels-roof-solar-cell.jpg') no-repeat center center;
+    background-size: cover;
     height: 90vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
     color: #fff;
   }
- 
+  .hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .hero-content p {
+    font-size: 1.2em;
+    font-weight:bolder;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
   /* About Section */
   #about {
     background: #fff;
