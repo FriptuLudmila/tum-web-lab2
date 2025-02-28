@@ -150,6 +150,22 @@
   .card p {
     font-size: 0.9em;
   }
+
+  .cta-section {
+    background: ghostwhite;
+    padding: 60px 0;
+    text-align: center;
+    color: #222;
+  }
+  .cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .cta-section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
   
   /* FAQ Section */
   .faq-section {
