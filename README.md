@@ -1,22 +1,25 @@
-# Lab 2 - Landing page
+# Solar Power Management Landing Page
 
-Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
+For this laboratory I have decided to design a landing page for my IoT Project which is a Solar Power Management system.
 
-## Customer requirements
+## Overview
 
-- Some form of navigation to sections (links, buttons)
-- Call to action
-- At least 4 sections ([see examples](https://webflow.com/blog/high-converting-landing-page))
-- Pleasant to the eyes
+The landing page is structured into several key sections:
 
-## Dev requirements
+- **Hero Section:** Captures users’ attention with a strong headline and calls-to-action that encourage learning more, signing up, or requesting a demo.
+![alt text](image-1.png)
+- **About Section:** Provides a short description of the system, highlighting its role in maximizing energy efficiency and reducing costs.
+- **Features Section:** Showcases key functionalities through interactive cards that flip to reveal additional details, such as real-time monitoring, actionable insights, remote control capabilities, and automated alerts.
+![alt text](image-2.png)
+- **Demo & Sign Up Sections:** Invite users to engage further by experiencing a demo or joining the community to receive updates and tips.
+![alt text](image-3.png)
+- **FAQ Section:** Answers common questions regarding the system’s operation, installation ease, and support services.
+- **Contact Section:** Offers a straightforward way for users to get in touch for further assistance or inquiries.
+![alt text](image-4.png)
+![alt text](image-5.png)
+- **Footer:** Contains links including privacy policy and terms of service.
 
-- Use vanilla CSS and HTML (no frameworks)
-- Have a decent git history (no one commit)
-- The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
-- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
+## Link to live demo
 
-## Other requirements:
+[Live Demo](tum-web-lab2-coral.vercel.app)
 
-- For potential maximal mark, a WIP version should be submitted during the class
-- Use index.html, reset.css
