@@ -21,5 +21,5 @@ The landing page is structured into several key sections:
 
 ## Link to live demo
 
-[Live Demo](tum-web-lab2-coral.vercel.app)
+[Live Demo](https://tum-web-lab2-coral.vercel.app)
 
