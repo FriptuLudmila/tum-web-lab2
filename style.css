@@ -77,7 +77,7 @@ nav ul li a:hover {
   color: #ffc107;
 }
 
-/* Responsive Menu for Mobile */
+/* Navigation Menu for Mobile */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -351,4 +351,3 @@ footer {
 .footer-content ul li a:hover {
   color: #fff;
 }
-
