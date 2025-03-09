@@ -80,7 +80,7 @@ nav ul li a:hover {
   color: #ffc107;
 }
 
-/* Enhanced Mobile Navigation Menu */
+/* Navigation Menu for Mobile */
 @media (max-width: 768px) {
   .nav-toggle-label {
     display: block;
@@ -101,6 +101,8 @@ nav ul li a:hover {
   .nav-toggle:checked ~ .nav-toggle-label span::after {
     transform: rotate(-45deg);
     top: 0;
+    z-index: 2;
+
   }
   
   nav {
@@ -126,6 +128,14 @@ nav ul li a:hover {
     visibility: visible;
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     border-top: 1px solid #333;
+    transition: max-height 0.3s ease;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  /* This is the important part */
+  #nav-toggle:checked ~ nav {
+    max-height: 300px;
   }
   
   nav ul {
