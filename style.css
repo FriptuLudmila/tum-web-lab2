@@ -34,7 +34,9 @@ header {
   font-size: 1.8em;
 }
 .nav-toggle {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 .nav-toggle-label {
   display: none;
@@ -79,12 +81,12 @@ nav ul li a:hover {
 
 /* Navigation Menu for Mobile */
 @media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
   .nav-toggle-label {
     display: block;
+    position: relative;
+    z-index: 2;
   }
+  
   nav {
     position: absolute;
     top: 100%;
@@ -94,14 +96,20 @@ nav ul li a:hover {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    z-index: 1;
+    width: 100%;
   }
-  .nav-toggle:checked + .nav-toggle-label + nav {
+  
+  /* This is the important part */
+  #nav-toggle:checked ~ nav {
     max-height: 300px;
   }
+  
   nav ul {
     flex-direction: column;
     padding: 10px 0;
   }
+  
   nav ul li {
     text-align: center;
     margin: 10px 0;
