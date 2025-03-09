@@ -229,13 +229,83 @@ nav ul li a:hover {
   font-weight: bold;
   border-radius: 4px;
   transition: background 0.3s, transform 0.3s;
+  display: inline-block;
 }
 .btn:hover {
   background: #ffca2c;
   transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .large-btn {
   font-size: 1.2em;
+}
+
+/* Enhanced Mobile Button Styles */
+@media (max-width: 768px) {
+  /* Improved hero CTA layout */
+  .hero-ctas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  /* Make buttons more touch-friendly */
+  .btn {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.25s ease;
+  }
+  
+  .btn:hover, .btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  /* Active state for touch feedback */
+  .btn:active {
+    background: #e6ac00;
+    transform: translateY(1px);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  }
+  
+  /* Large buttons are even more prominent */
+  .large-btn {
+    font-size: 1.25em;
+    padding: 16px 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Special styles for CTA sections */
+  .cta-section .btn {
+    background: #222;
+    color: #fff;
+    border: 2px solid #222;
+    margin-top: 10px;
+  }
+  
+  .cta-section .btn:hover, .cta-section .btn:active {
+    background: #333;
+    border-color: #333;
+  }
+  
+  /* Alternate CTA style */
+  .alternate-bg .btn {
+    background: transparent;
+    color: #222;
+    border: 2px solid #222;
+  }
+  
+  .alternate-bg .btn:hover, .alternate-bg .btn:active {
+    background: rgba(0,0,0,0.05);
+  }
 }
 
 /* About Section */
@@ -418,4 +488,36 @@ footer {
 }
 .footer-content ul li a:hover {
   color: #fff;
+}
+
+/* Additional Mobile Responsiveness for Texts */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2.2em;
+  }
+  
+  .hero-content p {
+    font-size: 1.1em;
+  }
+  
+  #about h2, 
+  .features-section h2, 
+  .cta-section h2, 
+  .faq-section h2, 
+  .contact-section h2 {
+    font-size: 2em;
+  }
+  
+  .features-grid {
+    gap: 15px;
+  }
+  
+  .card-inner {
+    height: 180px;
+  }
+  
+  .accordion-header {
+    font-size: 1.1em;
+    padding: 12px 15px;
+  }
 }
