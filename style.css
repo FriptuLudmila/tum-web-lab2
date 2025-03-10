@@ -463,6 +463,61 @@ nav ul li a:hover {
   margin: 0 auto 30px;
 }
 
+/* Mascot */
+#solar-mascot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  animation: 
+      appear 1s ease-out forwards 5s,
+      float 2s ease-in-out infinite alternate,
+      rotate 4s linear infinite;
+}
+
+@keyframes appear {
+  from { 
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to { 
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  from { transform: translateY(0) rotate(-5deg); }
+  to { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#solar-mascot-tooltip {
+  position: fixed;
+  bottom: 180px;
+  right: 20px;
+  background-color: #ffc107;
+  color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  max-width: 200px;
+  z-index: 1001;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#solar-mascot:hover + #solar-mascot-tooltip {
+  display: block;
+}
+
 /* Footer Styles */
 footer {
   background: #222;
