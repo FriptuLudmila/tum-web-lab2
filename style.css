@@ -483,6 +483,17 @@ footer {
     font-size: 1.1em;
     padding: 12px 15px;
   }
+  
+  /* Adjust the mascot position for mobile */
+  #solar-mascot {
+    bottom: 80px; /* Move up to avoid overlap with mobile menu */
+    width: 100px;
+    height: 100px;
+  }
+  
+  #solar-mascot-tooltip {
+    bottom: 190px;
+  }
 }
 /* Mobile-Only  menu */
 .mobile-quick-access {
@@ -516,7 +527,9 @@ footer {
     margin-bottom: 5px;
     color: #ffc107;
   }
+
+  /* Footer spacing for mobile */
   footer {
-    margin-bottom: 65px;
+    padding-bottom: 65px; /* Add padding to make room for mobile menu */
   }
 }
