@@ -495,7 +495,7 @@ footer {
     bottom: 190px;
   }
 }
-/* Mobile-Only menu */
+/* Mobile-Only  menu */
 .mobile-quick-access {
   display: none; /* Hidden on desktop */
 }
@@ -527,7 +527,7 @@ footer {
     margin-bottom: 5px;
     color: #ffc107;
   }
-  
+
   /* Footer spacing for mobile */
   footer {
     padding-bottom: 65px; /* Add padding to make room for mobile menu */
